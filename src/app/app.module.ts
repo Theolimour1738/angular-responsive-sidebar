@@ -13,6 +13,8 @@ import { HomeComponent } from './pages/home/home.component';
 import { ProfileComponent } from './pages/profile/profile.component';
 import { AboutComponent } from './pages/about/about.component';
 import { HelpComponent } from './pages/help/help.component';
+import {MatCardModule} from '@angular/material/card';
+import {MatDialogModule} from '@angular/material/dialog';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
 
 @NgModule({
@@ -22,9 +24,11 @@ import { NotFoundComponent } from './pages/not-found/not-found.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     MatToolbarModule,
+    MatDialogModule,
     MatSidenavModule,
     MatButtonModule,
     MatIconModule,
+    MatCardModule,
     MatDividerModule,
   ],
   providers: [],

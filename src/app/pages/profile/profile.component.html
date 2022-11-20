@@ -1,4 +1,39 @@
-<h2>Profile page</h2>
-<p>Some text here</p>
-<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-<h3>Some footer text</h3>
+<h1 mat-dialog-title>Add Contact </h1>
+<div mat-dialog-content>
+    <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" novalidate>
+        <mat-form-field appearance="fill">
+            <mat-label>Name</mat-label>
+            <input matInput formControlName="firstName" placeholder="Your name">
+            
+          </mat-form-field>
+          <mat-form-field appearance="fill">
+            <mat-label>Surname</mat-label>
+            <input matInput formControlName="lastName" placeholder="Your surname">
+            
+            
+          </mat-form-field>
+          <mat-form-field appearance="fill">
+            <mat-label>Email Address</mat-label>
+            <input matInput formControlName="email" placeholder="Your email address">
+            
+            
+          </mat-form-field>
+          <mat-form-field appearance="fill">
+            <mat-label>Address</mat-label>
+            <input matInput formControlName="address" placeholder="Your address">
+            
+            
+          </mat-form-field>
+          <mat-form-field appearance="fill">
+            <mat-label>cellNumber</mat-label>
+            <input matInput formControlName="phoneNumber" placeholder="Your phoneNumber">
+            
+            
+          </mat-form-field>
+          <div  mat-dialog-actions [align]="'end'">
+            <button mat-raised-button color="warn" mat-dialog-close="">Close</button>
+            <button mat-raised-button color="primary" type="submit">Register</button>
+          </div>
+       
+      </form>    
+</div>
